@@ -85,5 +85,21 @@ namespace IFBasic
                 }
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            /*           if (dataGridView1.SelectedRows.Count > 0)
+                       {
+                           string IDStudent = dataGridView1.SelectedRows[0].Cells[0].Value + String.Empty;
+                           txt.Text = IDStudent;
+                      }*/
+       
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txt.Text = dataGridView1.Rows[i].Cells[i].Value.ToString();
+
+
+        }
     }
 }

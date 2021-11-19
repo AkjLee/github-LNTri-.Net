@@ -31,6 +31,12 @@ namespace IFBasic
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDStudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fistNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -38,15 +44,11 @@ namespace IFBasic
             this.bttThem = new System.Windows.Forms.Button();
             this.bttSua = new System.Windows.Forms.Button();
             this.bttXoa = new System.Windows.Forms.Button();
-            this.sinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iDStudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fistNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,6 +66,42 @@ namespace IFBasic
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(757, 345);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // iDStudentDataGridViewTextBoxColumn
+            // 
+            this.iDStudentDataGridViewTextBoxColumn.DataPropertyName = "IDStudent";
+            this.iDStudentDataGridViewTextBoxColumn.HeaderText = "IDStudent";
+            this.iDStudentDataGridViewTextBoxColumn.Name = "iDStudentDataGridViewTextBoxColumn";
+            // 
+            // fistNameDataGridViewTextBoxColumn
+            // 
+            this.fistNameDataGridViewTextBoxColumn.DataPropertyName = "FistName";
+            this.fistNameDataGridViewTextBoxColumn.HeaderText = "FistName";
+            this.fistNameDataGridViewTextBoxColumn.Name = "fistNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // DOB
+            // 
+            this.DOB.DataPropertyName = "DOB";
+            this.DOB.HeaderText = "Ngày sinh";
+            this.DOB.Name = "DOB";
+            // 
+            // pOBDataGridViewTextBoxColumn
+            // 
+            this.pOBDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.pOBDataGridViewTextBoxColumn.DataPropertyName = "POB";
+            this.pOBDataGridViewTextBoxColumn.HeaderText = "NoiSinh";
+            this.pOBDataGridViewTextBoxColumn.Name = "pOBDataGridViewTextBoxColumn";
+            // 
+            // sinhvienBindingSource
+            // 
+            this.sinhvienBindingSource.DataSource = typeof(IFBasic.Dal.Sinhvien);
             // 
             // comboBox1
             // 
@@ -127,46 +165,19 @@ namespace IFBasic
             this.bttXoa.UseVisualStyleBackColor = true;
             this.bttXoa.Click += new System.EventHandler(this.bttXoa_Click);
             // 
-            // sinhvienBindingSource
+            // txt
             // 
-            this.sinhvienBindingSource.DataSource = typeof(IFBasic.Dal.Sinhvien);
-            // 
-            // iDStudentDataGridViewTextBoxColumn
-            // 
-            this.iDStudentDataGridViewTextBoxColumn.DataPropertyName = "IDStudent";
-            this.iDStudentDataGridViewTextBoxColumn.HeaderText = "IDStudent";
-            this.iDStudentDataGridViewTextBoxColumn.Name = "iDStudentDataGridViewTextBoxColumn";
-            // 
-            // fistNameDataGridViewTextBoxColumn
-            // 
-            this.fistNameDataGridViewTextBoxColumn.DataPropertyName = "FistName";
-            this.fistNameDataGridViewTextBoxColumn.HeaderText = "FistName";
-            this.fistNameDataGridViewTextBoxColumn.Name = "fistNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // DOB
-            // 
-            this.DOB.DataPropertyName = "DOB";
-            this.DOB.HeaderText = "Ngày sinh";
-            this.DOB.Name = "DOB";
-            // 
-            // pOBDataGridViewTextBoxColumn
-            // 
-            this.pOBDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.pOBDataGridViewTextBoxColumn.DataPropertyName = "POB";
-            this.pOBDataGridViewTextBoxColumn.HeaderText = "NoiSinh";
-            this.pOBDataGridViewTextBoxColumn.Name = "pOBDataGridViewTextBoxColumn";
+            this.txt.Location = new System.Drawing.Point(278, 26);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(100, 20);
+            this.txt.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt);
             this.Controls.Add(this.bttXoa);
             this.Controls.Add(this.bttSua);
             this.Controls.Add(this.bttThem);
@@ -176,9 +187,9 @@ namespace IFBasic
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +211,8 @@ namespace IFBasic
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
         private System.Windows.Forms.DataGridViewTextBoxColumn pOBDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
