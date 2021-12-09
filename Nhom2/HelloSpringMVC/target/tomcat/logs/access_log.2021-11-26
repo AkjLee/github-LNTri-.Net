@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [26/Nov/2021:17:34:24 +0700] "GET /HelloSpringMVC/hello HTTP/1.1" 404 1037 http-bio-8080-exec-1 178
+0:0:0:0:0:0:0:1 - - [26/Nov/2021:17:34:24 +0700] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [26/Nov/2021:17:35:40 +0700] "GET /HelloSpringMVC/hello HTTP/1.1" 200 170 http-bio-8080-exec-5 1026

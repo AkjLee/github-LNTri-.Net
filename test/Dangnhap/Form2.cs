@@ -23,12 +23,23 @@ namespace Dangnhap
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            Bitmap bitmap = new Bitmap(@"C:\Users\thile\source\repos\Xay-dung-ung-dung-voi-.NET-Framework---Nhom-2\testapp1\Dangnhap\Resources\hinh-anh-dong-chuc-mung-nam-moi-gif-1.gif");
+            Bitmap bitmap = new Bitmap(@"C:\Users\thile\source\repos\github-LNTri-.Net\test\Dangnhap\Resources\hinh-anh-dong-chuc-mung-nam-moi-gif-1.gif");
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.Image = bitmap;
            /* System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\thile\source\repos\testapp1\Dangnhap\Resources\HappyNewYear-ABBA_3rkqc.wav");
             player.Play();*/
         }
 
+      /*  private void bttdoimau_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                Properties.Settings.Default.From2 = colorDlg.Color;
+                Properties.Settings.Default.Save();
+                this.BackColor = colorDlg.Color;
+
+            }
+        }*/
     }
 }

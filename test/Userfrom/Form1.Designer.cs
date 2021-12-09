@@ -59,7 +59,7 @@ namespace Userfrom
             this.Avartar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Avartar.TabIndex = 0;
             this.Avartar.TabStop = false;
-            this.Avartar.Click += new System.EventHandler(this.pictureBox1_Click);
+
             // 
             // label1
             // 
@@ -71,7 +71,7 @@ namespace Userfrom
             this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thông tin cá nhân";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // groupBox1
             // 
@@ -93,7 +93,7 @@ namespace Userfrom
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lý lịch";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+ 
             // 
             // dtpNgaySinh
             // 
@@ -141,7 +141,7 @@ namespace Userfrom
             this.ttHoten.Name = "ttHoten";
             this.ttHoten.Size = new System.Drawing.Size(199, 23);
             this.ttHoten.TabIndex = 1;
-            this.ttHoten.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+
             // 
             // ttQuequan
             // 
@@ -150,7 +150,7 @@ namespace Userfrom
             this.ttQuequan.Name = "ttQuequan";
             this.ttQuequan.Size = new System.Drawing.Size(199, 67);
             this.ttQuequan.TabIndex = 1;
-            this.ttQuequan.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // ttNoisinh
             // 
@@ -158,7 +158,7 @@ namespace Userfrom
             this.ttNoisinh.Name = "ttNoisinh";
             this.ttNoisinh.Size = new System.Drawing.Size(199, 23);
             this.ttNoisinh.TabIndex = 1;
-            this.ttNoisinh.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // label3
             // 
@@ -168,7 +168,7 @@ namespace Userfrom
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Họ tên:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // label6
             // 
@@ -187,7 +187,7 @@ namespace Userfrom
             this.label5.Size = new System.Drawing.Size(60, 16);
             this.label5.TabIndex = 0;
             this.label5.Text = "Giới tính:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+
             // 
             // label4
             // 
@@ -227,7 +227,7 @@ namespace Userfrom
             this.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Userfrom";
             this.Text = "Thông tin cá nhân";
-            this.Load += new System.EventHandler(this.FrmUser_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.Avartar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

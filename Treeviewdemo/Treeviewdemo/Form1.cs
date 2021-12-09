@@ -35,24 +35,24 @@ namespace Treeviewdemo
                 }*/
         }
 
- 
+
         void addNode(string parentDirectory, TreeNode parentNode, int level)
         {
-            try 
-            { 
-                if( level < 5)
+            try
+            {
+                if (level < 5)
                 {
                     var directoryInfo = new System.IO.DirectoryInfo(parentDirectory);
                     var directories = directoryInfo.GetDirectories();
-                        foreach (var d in directories)
-                        {
-                            TreeNode subNode = new TreeNode(d.Name);
-                            parentNode.Nodes.Add(subNode);
-                            addNode(d.FullName, subNode, level +1); // giới hạn file xâu
-                        }
+                    foreach (var d in directories)
+                    {
+                        TreeNode subNode = new TreeNode(d.Name);
+                        parentNode.Nodes.Add(subNode);
+                        addNode(d.FullName, subNode, level + 1); // giới hạn file xâu
+                    }
                 }
             }
-            catch(Exception ex )
+            catch (Exception ex)
             {
 
             }
@@ -87,6 +87,8 @@ namespace Treeviewdemo
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-       
+
         }
+
     }
+}

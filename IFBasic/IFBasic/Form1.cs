@@ -74,8 +74,8 @@ namespace IFBasic
 
         private void bttSua_Click(object sender, EventArgs e)
         {
-            var sinhVien = sinhvienBindingSource.Current as SinhvienViewmodel;
-            if (sinhVien != null)
+            var Sinhvien = sinhvienBindingSource.Current as SinhvienViewmodel;
+            if (Sinhvien != null)
             {
                 var f = new frmThemSv(/*sinhVien*/);
                 var rs = f.ShowDialog();

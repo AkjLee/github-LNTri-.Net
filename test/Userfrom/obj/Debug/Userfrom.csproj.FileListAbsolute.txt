@@ -9,3 +9,10 @@ C:\Users\thile\source\repos\testapp1\Userfrom\obj\Debug\Userfrom.exe
 C:\Users\thile\source\repos\testapp1\Userfrom\obj\Debug\Userfrom.pdb
 C:\Users\thile\source\repos\testapp1\Userfrom\obj\Debug\Userfrom.FrmUser.resources
 C:\Users\thile\source\repos\testapp1\Userfrom\obj\Debug\Userfrom.Userfrom.resources
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.csprojAssemblyReference.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.Userfrom.resources
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.Properties.Resources.resources
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.csproj.GenerateResource.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.csproj.CoreCompileInputs.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.exe
+C:\Users\thile\source\repos\github-LNTri-.Net\test\Userfrom\obj\Debug\Userfrom.pdb

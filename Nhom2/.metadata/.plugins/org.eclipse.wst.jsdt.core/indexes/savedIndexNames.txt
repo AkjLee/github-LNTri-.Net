@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\thile\eclipse-workspace\Nhom2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+833533364.index
+1660892542.index
+3816000736.index
+3058758613.index
+2221628313.index
+4206341004.index
+3382674178.index

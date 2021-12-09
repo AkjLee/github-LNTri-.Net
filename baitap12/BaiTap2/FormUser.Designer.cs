@@ -47,13 +47,12 @@ namespace BaiTap2
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnChangeColor = new System.Windows.Forms.Button();
             this.lichSuHocTapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lichSuHocTapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +63,7 @@ namespace BaiTap2
             this.picAvatar.Location = new System.Drawing.Point(2, 58);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(149, 166);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAvatar.TabIndex = 0;
             this.picAvatar.TabStop = false;
             this.picAvatar.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -87,7 +86,7 @@ namespace BaiTap2
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(160, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 309);
+            this.panel1.Size = new System.Drawing.Size(437, 272);
             this.panel1.TabIndex = 1;
             // 
             // rdNu
@@ -135,7 +134,7 @@ namespace BaiTap2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxQueQuan.Location = new System.Drawing.Point(93, 191);
             this.rtxQueQuan.Name = "rtxQueQuan";
-            this.rtxQueQuan.Size = new System.Drawing.Size(749, 80);
+            this.rtxQueQuan.Size = new System.Drawing.Size(290, 64);
             this.rtxQueQuan.TabIndex = 3;
             this.rtxQueQuan.Text = "";
             // 
@@ -146,7 +145,7 @@ namespace BaiTap2
             this.dtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDate.Location = new System.Drawing.Point(95, 71);
             this.dtDate.Name = "dtDate";
-            this.dtDate.Size = new System.Drawing.Size(558, 20);
+            this.dtDate.Size = new System.Drawing.Size(99, 20);
             this.dtDate.TabIndex = 10;
             this.dtDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -156,7 +155,7 @@ namespace BaiTap2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoiSinh.Location = new System.Drawing.Point(95, 109);
             this.txtNoiSinh.Name = "txtNoiSinh";
-            this.txtNoiSinh.Size = new System.Drawing.Size(747, 20);
+            this.txtNoiSinh.Size = new System.Drawing.Size(288, 20);
             this.txtNoiSinh.TabIndex = 9;
             // 
             // txtHoTen
@@ -165,7 +164,7 @@ namespace BaiTap2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoTen.Location = new System.Drawing.Point(95, 33);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(747, 20);
+            this.txtHoTen.Size = new System.Drawing.Size(288, 20);
             this.txtHoTen.TabIndex = 8;
             // 
             // label10
@@ -235,35 +234,23 @@ namespace BaiTap2
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btnChangeColor);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(160, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(904, 337);
+            this.groupBox1.Size = new System.Drawing.Size(581, 314);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lý lịch trích ngang";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 434);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 30);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Quản lý sinh viên";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // btnChangeColor
             // 
             this.btnChangeColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChangeColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeColor.Location = new System.Drawing.Point(178, 434);
+            this.btnChangeColor.Location = new System.Drawing.Point(436, 26);
             this.btnChangeColor.Name = "btnChangeColor";
-            this.btnChangeColor.Size = new System.Drawing.Size(139, 30);
+            this.btnChangeColor.Size = new System.Drawing.Size(127, 30);
             this.btnChangeColor.TabIndex = 10;
             this.btnChangeColor.Text = "Thay đổi màu form";
             this.btnChangeColor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -278,27 +265,11 @@ namespace BaiTap2
             // 
             this.personBindingSource.DataSource = typeof(BaiTap2.Entities.Person);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(366, 434);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 30);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Quản lý lớp học";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_3);
-            // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 683);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnChangeColor);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(753, 405);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picAvatar);
             this.Controls.Add(this.panel1);
@@ -310,6 +281,7 @@ namespace BaiTap2
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lichSuHocTapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -337,9 +309,7 @@ namespace BaiTap2
         private System.Windows.Forms.RadioButton rdNam;
         private System.Windows.Forms.BindingSource personBindingSource;
         private System.Windows.Forms.BindingSource lichSuHocTapBindingSource;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnChangeColor;
-        private System.Windows.Forms.Button button1;
     }
 }
 

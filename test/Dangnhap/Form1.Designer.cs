@@ -94,9 +94,11 @@ namespace Dangnhap
             // 
             // Form1
             // 
+            this.AcceptButton = this.bthuy;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 211);
+            this.ClientSize = new System.Drawing.Size(426, 164);
+            this.ControlBox = false;
             this.Controls.Add(this.bthuy);
             this.Controls.Add(this.btdangnhap);
             this.Controls.Add(this.text_password);
@@ -104,7 +106,8 @@ namespace Dangnhap
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "                                                        ĐĂNG NHẬP";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -37,7 +37,6 @@ namespace Treeviewdemo
             this.panel2 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -56,7 +55,7 @@ namespace Treeviewdemo
             // 
             this.treeView1.Location = new System.Drawing.Point(-1, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(302, 450);
+            this.treeView1.Size = new System.Drawing.Size(317, 450);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -72,11 +71,11 @@ namespace Treeviewdemo
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Treeviewdemo.Properties.Resources.loading;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 13);
+            this.pictureBox1.Image = global::Treeviewdemo.Properties.Resources.Ajux_loader;
+            this.pictureBox1.Location = new System.Drawing.Point(191, 97);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(466, 281);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(466, 185);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -103,19 +102,11 @@ namespace Treeviewdemo
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(323, 301);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
-            this.panel3.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bttaocay);
             this.Controls.Add(this.panel1);
@@ -138,7 +129,6 @@ namespace Treeviewdemo
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Panel panel3;
     }
 }
 

@@ -1,0 +1,22 @@
+package org.o7planning.hellospringmvc.bo;
+
+import java.util.ArrayList;
+
+import org.o7planning.hellospringmvc.bean.SinhVien_LNTribean;
+import org.o7planning.hellospringmvc.dao.Sinhvien_LNTridao;
+import org.o7planning.hellospringmvc.dao.
+
+public class SinhVien_LNTribo {
+	Sinhvien_LNTridao sdao = new Sinhvien_LNTridao();
+	public ArrayList<SinhVien_LNTribean> getsv()throws Exception{
+		return sdao.getsv();
+	}
+	public ArrayList<SinhVien_LNTribean> Tim(ArrayList<SinhVien_LNTribean> ds, String key){
+    	ArrayList<SinhVien_LNTribean> tam= new ArrayList<SinhVien_LNTribean>();
+    	for(v tg: ds)
+    		if(tg.getHoTen().toLowerCase().contains(key.toLowerCase())||tg.getDiaChi().toLowerCase().contains(key.toLowerCase()))
+    			tam.add(tg);
+    	return tam;
+ 	
+	}
+}

@@ -9,6 +9,8 @@
 //------------------------------------------------------------------------------
 
 
+using System.Drawing;
+
 namespace Dangnhap.Properties
 {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,5 +27,7 @@ namespace Dangnhap.Properties
                 return defaultInstance;
             }
         }
+
+        public Color From2 { get; internal set; }
     }
 }

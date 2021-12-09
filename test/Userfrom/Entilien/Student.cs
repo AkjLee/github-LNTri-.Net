@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Userfrom.Entilien;
+using Userfrom.Properties;
+using Userfrom;
 
 namespace testapp1.Entilien
 {
@@ -54,6 +55,7 @@ namespace testapp1.Entilien
         public static Student Get(String id)
         {
             var dbStudent = GetList();
+
             var student = dbStudent.Where(s => s.Id == id).FirstOrDefault();
             return student;
         }

@@ -30,18 +30,21 @@ namespace Dangnhap
         void dangnhap()
         {
             if (text_username.Text.Length == 0 && text_password.Text.Length == 0)
-                MessageBox.Show("Bạn chưa đăng nhập tài khoản mật khẩu");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản mật khẩu" ,"Thông báo");
             else
                 if (text_username.Text.Length == 0)
-                MessageBox.Show("Bạn chưa đăng nhập tài khoản");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản","Thông báo");
             else
                     if (text_password.Text.Length == 0)
-                MessageBox.Show("Bạn chưa đăng nhập mật khẩu");
+                MessageBox.Show("Bạn chưa đăng nhập mật khẩu","Thông báo");
             else
-                    if (this.text_username.Text == "LNTri" && this.text_password.Text == "123@abc")
-                MessageBox.Show("Bạn đăng nhập tài khoản mật khẩu thành công");
+                    if (this.text_username.Text == "LNTri" && this.text_password.Text == "123")
+                //MessageBox.Show("Bạn đăng nhập tài khoản mật khẩu thành công");
+                return;
             else
-                MessageBox.Show("Bạn đăng nhập thất bại");
+                MessageBox.Show("Bạn đăng nhập thất bại", "Thông báo");
+              
+
         }
 
         private void btdangnhap_Click(object sender, EventArgs e)
@@ -60,7 +63,7 @@ namespace Dangnhap
             else
                 MessageBox.Show("Bạn đăng nhập thất bại");*/
             Form2 fm = new Form2();
-            if (this.text_username.Text == "LNTri" && this.text_password.Text == "123@abc")
+            if (this.text_username.Text == "LNTri" && this.text_password.Text == "123")
             {
                 fm.Show();             
             }

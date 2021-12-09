@@ -8,3 +8,13 @@ C:\Users\thile\source\repos\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.csp
 C:\Users\thile\source\repos\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.csproj.CoreCompileInputs.cache
 C:\Users\thile\source\repos\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.exe
 C:\Users\thile\source\repos\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.pdb
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.csprojAssemblyReference.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.Form1.resources
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.Properties.Resources.resources
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.csproj.GenerateResource.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.csproj.CoreCompileInputs.cache
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.exe
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\obj\Debug\Treeviewdemo.pdb
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\bin\Debug\Treeviewdemo.exe.config
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\bin\Debug\Treeviewdemo.exe
+C:\Users\thile\source\repos\github-LNTri-.Net\Treeviewdemo\Treeviewdemo\bin\Debug\Treeviewdemo.pdb

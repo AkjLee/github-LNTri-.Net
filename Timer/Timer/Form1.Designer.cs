@@ -45,7 +45,7 @@ namespace Timer
             // lbtimers
             // 
             this.lbtimers.AutoSize = true;
-            this.lbtimers.Location = new System.Drawing.Point(82, 46);
+            this.lbtimers.Location = new System.Drawing.Point(474, 36);
             this.lbtimers.Name = "lbtimers";
             this.lbtimers.Size = new System.Drawing.Size(71, 13);
             this.lbtimers.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace Timer
             // 
             // btbatdau
             // 
-            this.btbatdau.Location = new System.Drawing.Point(157, 73);
+            this.btbatdau.Location = new System.Drawing.Point(549, 63);
             this.btbatdau.Name = "btbatdau";
             this.btbatdau.Size = new System.Drawing.Size(120, 23);
             this.btbatdau.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace Timer
             // 
             // btketthuc
             // 
-            this.btketthuc.Location = new System.Drawing.Point(157, 103);
+            this.btketthuc.Location = new System.Drawing.Point(549, 93);
             this.btketthuc.Name = "btketthuc";
             this.btketthuc.Size = new System.Drawing.Size(120, 23);
             this.btketthuc.TabIndex = 3;
@@ -75,12 +75,12 @@ namespace Timer
             // 
             this.lbtimer.AutoSize = true;
             this.lbtimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtimer.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbtimer.Location = new System.Drawing.Point(366, 32);
+            this.lbtimer.ForeColor = System.Drawing.Color.Black;
+            this.lbtimer.Location = new System.Drawing.Point(55, 9);
             this.lbtimer.Name = "lbtimer";
-            this.lbtimer.Size = new System.Drawing.Size(291, 135);
+            this.lbtimer.Size = new System.Drawing.Size(358, 135);
             this.lbtimer.TabIndex = 4;
-            this.lbtimer.Text = "1:30";
+            this.lbtimer.Text = "00:00";
             this.lbtimer.Click += new System.EventHandler(this.lbtimer_Click);
             // 
             // timer1
@@ -90,7 +90,7 @@ namespace Timer
             // 
             // Nbtimer
             // 
-            this.Nbtimer.Location = new System.Drawing.Point(157, 46);
+            this.Nbtimer.Location = new System.Drawing.Point(549, 36);
             this.Nbtimer.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -110,6 +110,7 @@ namespace Timer
             0,
             0,
             0});
+            this.Nbtimer.ValueChanged += new System.EventHandler(this.Nbtimer_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -125,7 +126,7 @@ namespace Timer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 504);
+            this.ClientSize = new System.Drawing.Size(735, 447);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Nbtimer);
             this.Controls.Add(this.lbtimer);

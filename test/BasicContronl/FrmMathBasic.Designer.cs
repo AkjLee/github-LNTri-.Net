@@ -62,7 +62,6 @@ namespace BasicContronl
             this.label2.Size = new System.Drawing.Size(74, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số thứ nhất:";
-         //   this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -74,7 +73,6 @@ namespace BasicContronl
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số thứ hai:";
-           // this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // KetQua
             // 
@@ -86,7 +84,6 @@ namespace BasicContronl
             this.KetQua.Size = new System.Drawing.Size(52, 15);
             this.KetQua.TabIndex = 2;
             this.KetQua.Text = "Kết quả:";
-            //this.KetQua.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtSoThuNhat
             // 
@@ -101,6 +98,7 @@ namespace BasicContronl
             this.txtSoThuHai.Name = "txtSoThuHai";
             this.txtSoThuHai.Size = new System.Drawing.Size(318, 20);
             this.txtSoThuHai.TabIndex = 4;
+            this.txtSoThuHai.TextChanged += new System.EventHandler(this.txtSoThuHai_TextChanged);
             // 
             // btCong
             // 
@@ -151,7 +149,6 @@ namespace BasicContronl
             this.O.Size = new System.Drawing.Size(15, 16);
             this.O.TabIndex = 6;
             this.O.Text = "0";
-         //   this.O.Click += new System.EventHandler(this.label4_Click);
             // 
             // FrmMathBasic
             // 
@@ -172,7 +169,6 @@ namespace BasicContronl
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmMathBasic";
             this.Text = "Chương trình tính toán cơ bản";
-           // this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -23,11 +23,11 @@ namespace Timer
             if (seconds == 0)
             {
                 timer1.Stop();
-                Bitmap bitmap = new Bitmap(@"C:\Users\thile\source\repos\Timer\Timer\anh.gif");
+                Bitmap bitmap = new Bitmap(@"C:\Users\thile\source\repos\github-LNTri-.Net\Timer\Timer\anh.gif");
                 pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
                 pictureBox1.Image = bitmap;
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\thile\source\repos\Timer\Timer\HappyNewYear-ABBA_3rkqc.wav");
-                player.Play();
+                /*System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\thile\source\repos\github-LNTri-.Net\Timer\Timer\HappyNewYear-ABBA_3rkqc.mp3");
+                player.Play();*/
             }
             else
             {
@@ -41,7 +41,7 @@ namespace Timer
 
         private void btbatdau_Click(object sender, EventArgs e)
         {
-            seconds = (int)Nbtimer.Value*60 ;
+            seconds = (int)Nbtimer.Value/**60*/ ;
             timer1.Start();
         }
 
@@ -57,6 +57,11 @@ namespace Timer
         }
 
         private void lbtimer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nbtimer_ValueChanged(object sender, EventArgs e)
         {
 
         }

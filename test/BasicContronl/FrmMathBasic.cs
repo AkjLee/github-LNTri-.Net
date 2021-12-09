@@ -128,5 +128,10 @@ namespace BasicContronl
                 MessageBox.Show($"Lỗi chi tiết:{ex.Message}");
             }
         }
+
+        private void txtSoThuHai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
