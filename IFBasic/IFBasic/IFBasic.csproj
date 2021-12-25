@@ -59,7 +59,6 @@
     <Compile Include="BLL\SinhvienBLL.cs" />
     <Compile Include="Dal\Lophoc.cs" />
     <Compile Include="Dal\Model1.cs" />
-    <Compile Include="Dal\NhanVien.cs" />
     <Compile Include="Dal\QLSinhvienModel.cs" />
     <Compile Include="Dal\Sinhvien.cs" />
     <Compile Include="Dal\sysdiagram.cs" />

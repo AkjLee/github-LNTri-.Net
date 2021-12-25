@@ -112,14 +112,6 @@ namespace IFBasic
 
 
 
-
-
-
-
-
-
-
-
         private void frmThemSv_Load(object sender, EventArgs e)
         {
 

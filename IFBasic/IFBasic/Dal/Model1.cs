@@ -13,7 +13,6 @@ namespace IFBasic.Dal
         }
 
         public virtual DbSet<Lophoc> Lophocs { get; set; }
-        public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<Sinhvien> Sinhviens { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
